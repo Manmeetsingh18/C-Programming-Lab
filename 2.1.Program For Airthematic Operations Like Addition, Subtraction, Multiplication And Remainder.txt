@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int a,b;
+    printf("Enter the value of first number:- ");
+    scanf("%d",&a);
+    printf("Enter the value of second number:- ");
+    scanf("%d",&b);
+    int sum=a+b;
+    int sub=a-b;
+    int multi=a*b;
+    int remainder=a%b;
+    printf("The addition of %d and %d is %d\n",a,b,sum);
+    printf("The subtraction of %d and %d is %d\n",a,b,sub);
+    printf("The multiplication of %d and %d is %d\n",a,b,multi);
+    printf("The remainder of %d and %d is %d\n",a,b,remainder);
+    return 0;
+}

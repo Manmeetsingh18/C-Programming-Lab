@@ -1,0 +1,27 @@
+#include<stdio.h>
+#define PI 3.14
+int main(){
+    float rad,sid,len,wi;
+    float cir_pe,cir_ar,sq_ar,sq_pe,rec_pe,rec_ar;
+    //FOR CIRCLE
+    printf("Enter the radius of the circle: ");
+    scanf("%f",&rad);
+    cir_ar=PI*rad*rad;
+    cir_pe=2*PI*rad;
+    //FOR SQUARE
+    printf("Enter the side of square: ");
+    scanf("%f",&sid);
+    sq_ar=sid*sid;
+    sq_pe=4*sid;
+    //FOR RECTANGLE
+    printf("Enter the length and width of the rectangle: ");
+    scanf("%f %f",&len,&wi);
+    rec_ar=len*wi;
+    rec_pe=2*(len+wi);
+    //RESULTS
+    printf("\nArea of Circle= %f\nPerimeter of Circle= %f\n",cir_ar,cir_pe);
+    printf("\nArea of Squre= %f\nPerimeter of Square= %f\n",sq_ar,sq_pe);
+    printf("\nArea of Rectangle= %f\nPerimeter of Rectangle= %f\n",rec_pe,rec_ar);
+    return 0;
+
+}
